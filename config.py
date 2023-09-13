@@ -13,7 +13,9 @@ If you are interested in what I have to offer, please let me know.
 
 Best wishes!"""
 
+file_directory = 'files' # Директория с вложениями
+
 xlsx_file_name = "emails_db.xlsx" # Название Excel файла
 xlsx_sheet_name = "emails_db" # Название листа
 
-time_sleep = 3.0 # Время ожидания
+time_sleep = 0 # Время ожидания
