@@ -17,3 +17,5 @@
 ### 5. В Excel файле ставим почты (первая строка должна быть пустая)
 ### 6. В папку `files` поместите все файлы, которые должны вкладываться в письмо 
 ### 7. Запускаем файл main.py
+## Видеоинструкция
+[![Watch the video](https://img.youtube.com/vi/FzSzB2fJeAA/hqdefault.jpg)](https://www.youtube.com/embed/FzSzB2fJeAA)
