@@ -24,7 +24,9 @@ def send_email(to_email): # Функция отправки сообщения
                 with open(f, 'rb') as f:  # Открытие свойств файла
                     image_data = f.read()  # Считывание данных файла
                     image_name = f.name  # Считывание имени файла
-                msg.add_attachment(image_data, maintype='image', subtype='jpg', filename=image_name)  # Добавление вложений
+                if (image_name.endswith('.jpg')):
+                    image_name = image_name[:-4][(len(file_directory) + 1):]
+                    msg.add_attachment(image_data, maintype='image', subtype='jpg', filename=image_name)  # Добавление вложений
         server.sendmail(from_email, to_email, msg.as_string()) # Отправка письма
         return "Письмо отправленно на почту " + to_email # Возвращение сообщения об успехе
     except Exception as _ex: # Обработка исключений
