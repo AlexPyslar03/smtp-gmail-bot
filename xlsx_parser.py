@@ -14,4 +14,4 @@ class XlsxParser(): # Класс парсера xlsx файлов
         for i in range(0, self.xlsx.values.size):  # Прохождения по ячейкам таблицы
             if (str(self.xlsx.values.item(i)) != "nan"):  # Обход пустых ячеек
                 msg.send_msg(str(self.xlsx.values.item(i))) # Отправка сообщения
-        time.sleep(time_sleep) # Ожидания против спама
+                time.sleep(time_sleep) # Ожидания против спама
